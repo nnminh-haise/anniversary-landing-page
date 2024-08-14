@@ -1,0 +1,66 @@
+.hero-second {
+  position: relative;
+  padding: 100px 20px;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero-second::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: 1;
+}
+
+.hero-second p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-second .signature {
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.hero-second p {
+  color: white;
+  text-align: justify;
+  width: 100%;
+  font-size: 23px;
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 5px;
+  margin: 0;
+  padding-top: 450px;
+}
+
+/* Media Query for Desktops */
+@media (min-width: 1024px) {
+  .hero-second {
+    padding: 100px 60px;
+  }
+
+  .hero-second h1 {
+    width: 50%;
+    font-size: 70px;
+  }
+
+  .hero-second p {
+    width: 50%;
+    font-size: 25px;
+  }
+}

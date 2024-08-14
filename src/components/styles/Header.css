@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo p {
+  font-size: 20px;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}

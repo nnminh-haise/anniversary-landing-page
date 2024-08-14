@@ -1,0 +1,72 @@
+.hero {
+  position: relative;
+  padding: 100px 20px;
+  background-size: cover;
+  background-position: center;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: 1;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  width: 60%;
+  font-size: 55px;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 55px;
+  margin-bottom: 80px;
+  color: white;
+  text-align: right;
+  padding-top: 150px;
+}
+
+.hero p {
+  color: white;
+  text-align: right;
+  width: 100%;
+  font-size: 21px;
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 5px;
+  margin: 0;
+}
+
+/* Media Query for Desktops */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 100px 60px;
+  }
+
+  .hero h1 {
+    width: 50%;
+    font-size: 70px;
+  }
+
+  .hero p {
+    width: 50%;
+    font-size: 25px;
+  }
+}
